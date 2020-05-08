@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>购物车</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        a:link,a:visited,a:hover,a:active{
+            text-decoration: none;
+            outline:none;
+        }
+    </style>
+</head>
+<body>
+<h3 style="margin-top:50px;margin-left:47%;">欢迎来到购物车</h3>
+<span>
+    <a th:if="${session.user == null}" href="http://login.codeshop.com:9000/login?target=http://cart.codeshop.com:9012/">登录</a>
+    <a th:unless="${session.user == null}" href="http://login.codeshop.com:9000/user/logout?target=http://cart.codeshop.com:9012/">退出</a>
+</span>
+<br/>
+<p th:unless="${session.user == null}">
+    <span th:text="${session.user.username}"></span>,已登录
+</p>
+</body>
+</html>

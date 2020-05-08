@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sso_session</artifactId>
+        <groupId>com.fwtai</groupId>
+        <version>v1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>login</artifactId>
+    <description>
+        登录认证中心 login.xxx.com
+    </description>
+    <dependencies>
+
+    </dependencies>
+</project>
