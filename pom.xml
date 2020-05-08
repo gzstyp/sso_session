@@ -8,10 +8,9 @@
     <version>v1.0.0</version>
     <url>http://www.yinlz.com</url>
     <modules>
-        <module>main</module>
         <module>cart</module>
-        <module>vip</module>
         <module>login</module>
+        <module>server</module>
     </modules>
     <description>
 
